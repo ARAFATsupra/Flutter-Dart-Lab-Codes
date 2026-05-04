@@ -1,0 +1,63 @@
+import 'package:flutter/material.dart';
+
+void main(){
+  runApp(MyApp()); // App Class
+}
+
+class MyApp extends StatelessWidget {
+  const MyApp({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(   //Material App Class
+      home: Dashboard(), //Activity Class
+    );
+  }
+}
+
+class Dashboard extends StatelessWidget {
+  const Dashboard({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text('ITM 8th Batch'),
+        backgroundColor: Colors.red,
+        foregroundColor: Colors.white,
+        centerTitle: true,
+      ),
+      
+      body: Column(
+        children: [
+          Row(
+            children: [
+              Text('Hello'),
+              Text('World')
+            ],
+          ),
+
+          SizedBox(width: 400,),
+
+          Row(
+    mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Icon(Icons.add_a_photo_outlined),
+              Icon(Icons.access_alarm),
+              Icon(Icons.access_time),
+            ],
+          ),
+
+          SizedBox(width: 400,),
+          
+          Image.network("https://www.w3schools.com/html/pic_trulli.jpg"),
+          SizedBox(height: 40,),
+          ElevatedButton(onPressed: () {}, child: Text('Submit'),),
+          TextButton(onPressed: () {}, child: Text('Submit'),),
+          IconButton(onPressed: () {}, icon: Icon(Icons.add),),
+
+        ],
+      )
+    );
+  }
+}

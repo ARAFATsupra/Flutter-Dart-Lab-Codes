@@ -1,0 +1,33 @@
+abstract class Calculator{
+  void Sum(){}
+    void Substraction(){}
+
+    void Multiply(){}
+
+    void fly(){
+    print('hello world!');
+    }
+}
+
+class B implements Calculator{
+  void Substraction(){
+    print('Substraction method');
+  }
+  void Sum(){
+    print('Sum method');
+  }
+  void Multiply(){
+    print('Multiply method');
+  }
+  void fly(){
+    print('Fly now');
+  }
+}
+
+void main(){
+  B b1 = B();
+  b1.Substraction();
+  b1.Sum();
+  b1.Multiply();
+  b1.fly();
+}

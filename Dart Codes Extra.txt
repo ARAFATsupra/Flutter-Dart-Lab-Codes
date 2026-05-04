@@ -1,0 +1,254 @@
+import 'package:flutter/material.dart';
+
+void main(){
+  runApp(Myapp());
+}
+
+class Myapp extends StatelessWidget {
+  const Myapp({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      home: FirstPage(),
+    );
+  }
+}
+
+class FirstPage extends StatelessWidget {
+  const FirstPage({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text('ITM 8TH BATCH'),
+        foregroundColor: Colors.red,
+        backgroundColor: Colors.yellow,
+        centerTitle: true,
+      ),
+
+      body: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        crossAxisAlignment: CrossAxisAlignment.center,
+        children: [
+          Text('The only creator is Allah!', style: TextStyle(color: Colors.black, fontSize: 30, fontWeight: FontWeight.bold, letterSpacing: 2, wordSpacing: 2),),
+          SizedBox(height: 50,),
+          Text('The only creator is Allah!', style: TextStyle(color: Colors.redAccent, fontSize: 50, fontWeight: FontWeight.w900, wordSpacing: 2, fontStyle: FontStyle.italic),),
+          SizedBox(height: 50,),
+          Text('The only creator is Allah!', style: TextStyle(color: Colors.blue, fontSize: 20, fontFamily: 'Times New Roman', fontStyle: FontStyle.italic ),),
+          SizedBox(height: 50,),
+          Text('The only creator is Allah!', style: TextStyle(color: Colors.black, fontSize: 30, fontWeight: FontWeight.bold, letterSpacing: 2, wordSpacing: 2),),
+          SizedBox(height: 50,),
+          Text('The only creator is Allah!', style: TextStyle(color: Colors.redAccent, fontSize: 50, fontWeight: FontWeight.w900, wordSpacing: 2, fontStyle: FontStyle.italic),),
+          SizedBox(height: 50,),
+          Text('The only creator is Allah!', style: TextStyle(color: Colors.blue, fontSize: 20, fontFamily: 'Times New Roman', fontStyle: FontStyle.italic ),),
+          SizedBox(height: 50,),
+        ],
+      ),
+    );
+  }
+}
+
+
+import 'package:flutter/material.dart';
+
+void main(){
+  runApp(MyApp());
+}
+
+class MyApp extends StatelessWidget {
+  const MyApp({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      home: FirstPage(),
+    );
+  }
+}
+
+class FirstPage extends StatelessWidget {
+  const FirstPage({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text('Welcome To the App'),
+        backgroundColor: Colors.blue,
+        foregroundColor: Colors.white,
+        centerTitle: true,
+      ),
+
+      body:
+        Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+              Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  SizedBox(width: 80),
+                  Text('ITM 8th Batch!', style: TextStyle(color: Colors.red, fontSize: 20),),
+                  SizedBox(width: 80),
+                  Text('ITM 8th Batch!', style: TextStyle(color: Colors.green, fontSize: 20),),
+                  SizedBox(width: 80),
+                  Text('ITM 8th Batch!', style: TextStyle(color: Colors.blue, fontSize: 20),),
+                  SizedBox(width: 80),
+                ],
+              ),
+
+            SizedBox(height: 20,),
+
+            Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              crossAxisAlignment: CrossAxisAlignment.center,
+              children: [
+                SizedBox(width: 150),
+                Icon(Icons.ad_units),
+                SizedBox(width: 150),
+                Icon(Icons.ac_unit_rounded),
+                SizedBox(width: 150),
+                Icon(Icons.back_hand),
+                SizedBox(width: 150),
+              ],
+            ),
+
+            SizedBox(height: 20,),
+
+            Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              crossAxisAlignment: CrossAxisAlignment.center,
+              children: [
+                SizedBox(width: 80),
+                ElevatedButton(onPressed: () {}, child: Text('data')),SizedBox(height: 20,),
+                SizedBox(width: 80),
+                TextButton(onPressed: () {}, child: Text('data')),SizedBox(height: 20,),
+                SizedBox(width: 80),
+                OutlinedButton(onPressed: () {}, child: Text('data')),SizedBox(height: 20,),
+                SizedBox(width: 80),
+                IconButton(onPressed: () {}, icon: Icon(Icons.add)),SizedBox(height: 20,),
+                SizedBox(width: 80),
+              ],
+            ),
+
+            SizedBox(height: 20,),
+
+            Image.network('https://www.w3schools.com/html/pic_trulli.jpg'),
+            SizedBox(height: 20,),
+
+            Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              crossAxisAlignment: CrossAxisAlignment.center,
+              children: [
+                Icon(Icons.access_alarm),
+                SizedBox(height: 20)
+              ],
+            ),
+
+            Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              crossAxisAlignment: CrossAxisAlignment.center,
+              children: [
+                Icon(Icons.backpack),
+                SizedBox(height: 20)
+              ],
+            ),
+
+            Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              crossAxisAlignment: CrossAxisAlignment.center,
+              children: [
+                Icon(Icons.cake),
+                SizedBox(height: 20)
+              ],
+            ),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              crossAxisAlignment: CrossAxisAlignment.center,
+              children: [
+                Icon(Icons.access_alarm),
+                SizedBox(height: 20),
+                Icon(Icons.backpack),
+                SizedBox(height: 20),
+                Icon(Icons.cake),
+                SizedBox(height: 20),
+              ],
+            ),
+          ],
+        ),
+      );
+  }
+}
+
+import 'package:flutter/material.dart';
+
+void main() {
+  runApp(MyApp());
+}
+
+class MyApp extends StatelessWidget {
+  const MyApp({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+        home: NestedLayout()
+    );
+  }
+}
+
+class NestedLayout extends StatelessWidget {
+  const NestedLayout({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text("Nested Layout"),
+        backgroundColor: Colors.black,
+        foregroundColor: Colors.white,
+        centerTitle: true,
+      ),
+
+      body: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: [
+
+          Row(
+            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+            children: [
+
+              Column(
+                children: [
+                  Icon(Icons.phone, size: 50, color: Colors.red),
+                  Text("Call", style: TextStyle(color: Colors.red),)
+                ],
+              ),
+
+              Column(
+                children: [
+                  Icon(Icons.map, size: 50, color: Colors.green),
+                  Text("Route", style: TextStyle(color: Colors.green),)
+                ],
+              ),
+
+              Column(
+                children: [
+                  Icon(Icons.share, size: 50, color: Colors.blue),
+                  Text("Share", style: TextStyle(color: Colors.blue),)
+                ],
+              ),
+
+            ],
+          )
+
+        ],
+      ),
+    );
+  }
+}
+

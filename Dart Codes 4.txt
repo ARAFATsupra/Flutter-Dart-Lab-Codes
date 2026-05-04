@@ -1,0 +1,378 @@
+class Animal{
+  void makeSound(){
+    print('Animal makes sound');
+  }
+  void view(){
+    print('View');
+  }
+}
+class Dog extends Animal{
+  @override
+  void view(){
+    print('Dog Barks');
+  }
+}
+
+void main(){
+  Animal a1 = Dog();
+  a1.view();
+  a1.makeSound();
+}
+
+class Animal{
+  void makeSound(){
+    print('Animal makes sound');
+  }
+  void view(){
+    print('View');
+  }
+}
+class Dog extends Animal{
+  @override
+  void view(){
+    print('Dog Barks');
+  }
+  void info(){
+    print('This is polymorphism example');
+  }
+}
+
+void main(){
+  Animal a1 = Dog();
+  a1.view();
+  a1.makeSound();
+  Dog d1 = Dog();
+  d1.info();
+}
+
+class Animal {
+  void sum(){}
+  void view(){
+    print('View');
+  }
+  void makeSound(){
+    print('Animal makes sound');
+  }
+}
+class Dog implements Animal{
+  void sum(){
+    print('Result is sum');
+  }
+  void view(){
+    print('View');
+  }
+  void makeSound(){
+    print('Animal makes sound');
+  }
+}
+
+void main(){
+  Dog d1 = Dog();
+  d1.sum();
+  d1.view();
+  d1.makeSound();
+}
+
+import 'package:flutter/material.dart';
+
+void main(){
+  runApp(MyApp());
+}
+
+class MyApp extends StatelessWidget {
+  const MyApp({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      home: FirstPage(),
+    );
+  }
+}
+
+class FirstPage extends StatelessWidget {
+  const FirstPage({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text('ITM 8th Batch'),
+        foregroundColor: Colors.white,
+        backgroundColor: Colors.black,
+        centerTitle: true,
+      ),
+      body: Column(
+          mainAxisAlignment: MainAxisAlignment.end,
+        children: [
+          Text('Data'),
+          SizedBox(height: 20,),Text('Data'),
+          SizedBox(height: 20,),Text('Data'),
+          SizedBox(height: 20,),Text('Data'),
+          SizedBox(height: 20,),Text('Data'),
+          SizedBox(height: 20,),Text('Data'),
+        ],
+      ),
+    );
+  }
+}
+
+import 'package:flutter/material.dart';
+
+void main(){
+  runApp(MyApp());
+}
+
+class MyApp extends StatelessWidget {
+  const MyApp({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      home: FirstPage(),
+    );
+  }
+}
+
+class FirstPage extends StatelessWidget {
+  const FirstPage({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text('ITM 8th Batch'),
+        foregroundColor: Colors.white,
+        backgroundColor: Colors.black,
+        centerTitle: true,
+      ),
+      body: Column(
+          mainAxisAlignment: MainAxisAlignment.start,
+        children: [
+          Text('Data'),
+          SizedBox(height: 20,),Text('Data'),
+          SizedBox(height: 20,),Text('Data'),
+          SizedBox(height: 20,),Text('Data'),
+          SizedBox(height: 20,),Text('Data'),
+          SizedBox(height: 20,),Text('Data'),
+        ],
+      ),
+    );
+  }
+}
+
+import 'package:flutter/material.dart';
+
+void main(){
+  runApp(MyApp());
+}
+
+class MyApp extends StatelessWidget {
+  const MyApp({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      home: FirstPage(),
+    );
+  }
+}
+
+class FirstPage extends StatelessWidget {
+  const FirstPage({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text('ITM 8th Batch'),
+        foregroundColor: Colors.white,
+        backgroundColor: Colors.black,
+        centerTitle: true,
+      ),
+      body: Column(
+          mainAxisAlignment: MainAxisAlignment.spaceAround,
+        children: [
+          Text('Data'),
+          SizedBox(height: 20,),Text('Data'),
+          SizedBox(height: 20,),Text('Data'),
+          SizedBox(height: 20,),Text('Data'),
+          SizedBox(height: 20,),Text('Data'),
+          SizedBox(height: 20,),Text('Data'),
+        ],
+      ),
+    );
+  }
+}
+
+
+import 'package:flutter/material.dart';
+
+void main(){
+  runApp(MyApp());
+}
+
+class MyApp extends StatelessWidget {
+  const MyApp({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      home: FirstPage(),
+    );
+  }
+}
+
+class FirstPage extends StatelessWidget {
+  const FirstPage({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text('ITM 8th Batch'),
+        foregroundColor: Colors.white,
+        backgroundColor: Colors.black,
+        centerTitle: true,
+      ),
+      body: Column(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+        children: [
+          Text('Data'),
+          SizedBox(height: 20,),Text('Data'),
+          SizedBox(height: 20,),Text('Data'),
+          SizedBox(height: 20,),Text('Data'),
+          SizedBox(height: 20,),Text('Data'),
+          SizedBox(height: 20,),Text('Data'),
+          SizedBox(height: 20,),
+        ],
+      ),
+    );
+  }
+}
+
+import 'package:flutter/material.dart';
+
+void main(){
+  runApp(MyApp());
+}
+
+class MyApp extends StatelessWidget {
+  const MyApp({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      home: FirstPage(),
+    );
+  }
+}
+
+class FirstPage extends StatelessWidget {
+  const FirstPage({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text('ITM 8th Batch'),
+        foregroundColor: Colors.white,
+        backgroundColor: Colors.black,
+        centerTitle: true,
+      ),
+      body: Column(
+          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+        children: [
+          Text('Data'),
+          SizedBox(height: 20,),Text('Data'),
+          SizedBox(height: 20,),Text('Data'),
+          SizedBox(height: 20,),Text('Data'),
+          SizedBox(height: 20,),Text('Data'),
+          SizedBox(height: 20,),Text('Data'),
+          SizedBox(height: 20,),
+        ],
+      ),
+    );
+  }
+}
+
+import 'package:flutter/material.dart';
+
+void main(){
+  runApp(MyApp());
+}
+
+class MyApp extends StatelessWidget {
+  const MyApp({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      home: FirstPage(),
+    );
+  }
+}
+
+class FirstPage extends StatelessWidget {
+  const FirstPage({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text('ITM 8th Batch'),
+        foregroundColor: Colors.white,
+        backgroundColor: Colors.black,
+        centerTitle: true,
+      ),
+      body: Column(
+         crossAxisAlignment: CrossAxisAlignment.center,
+          mainAxisAlignment: MainAxisAlignment.center,
+        children: [
+          Text('Data'),
+          SizedBox(height: 20,),Text('Data'),
+          SizedBox(height: 20,),Text('Data'),
+          SizedBox(height: 20,),Text('Data'),
+          SizedBox(height: 20,),Text('Data'),
+          SizedBox(height: 20,),Text('Data'),
+          SizedBox(height: 20,),
+        ],
+      ),
+    );
+  }
+}
+
+import 'package:flutter/material.dart';
+
+void main(){
+  runApp(ITM());
+}
+
+class ITM extends StatelessWidget {
+  const ITM({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      home: Dashboard(),
+    );
+  }
+}
+
+class Dashboard extends StatelessWidget {
+  const Dashboard({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text('ITM App'),
+        foregroundColor: Colors.blue,
+        backgroundColor: Colors.black,
+        centerTitle: true,
+      ),
+    );
+  }
+}
+
+

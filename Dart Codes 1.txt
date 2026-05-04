@@ -1,0 +1,74 @@
+void main() {
+
+  String C = 'Hello World';
+  print(C.replaceAll('World', 'Flutter'));
+
+  String d = 'a b c d e f';
+  print(d.split(' '));
+
+  print(C.split('o'));
+  print(C.split('l'));
+  print(C.substring(0,3));
+
+  int a = 10;
+  print(a.toString());
+
+  String email = 'fhdgmail.com';
+  print(email.contains('@'));
+
+  var list1 = List<int>.filled(5,0);
+  list1 = [1,2,3,4,5];
+  print(list1);
+
+  var b = [10,20,30];
+  b.add(54);
+  print(b);
+  b.addAll([55,56,57]);
+  print(b);
+  b.insert(1,21);
+  print(b);
+  b.insertAll(0,[55,56,57]);
+  print(b);
+  b.insertAll(2,[55,56,57]);
+  print(b);
+
+  Set x = {1,2,3,4};
+  x.addAll({7,8,9});
+  print(x);
+  var y = x.elementAt(2);
+  print(y);
+  var student = {'Name':'Tom', 'Age':'23'};
+  print(student);
+
+  Map info = {
+    'Saturday': ['12:00am - 1:00pm', 'MAD', 'AR'],
+    'Sunday': ['1:00pm - 2:30pm', 'Research', 'NJ'],
+    'Monday': ['2:30pm - 4:00pm', 'ML', 'MA'],
+  };
+  print(info);
+
+  print(sum(10,11,12));
+
+  print(multiply(20,30));
+
+  Greetings();
+  Goodbye();
+}
+
+int sum(a,b,c){
+  int add = a+b+c;
+  return add;
+}
+
+int multiply(x,y){
+  int B = x*y;
+  return B;
+}
+
+void Greetings(){
+  print('Hello World !!');
+}
+
+Goodbye(){
+  print('Bye Bye !!');
+}
