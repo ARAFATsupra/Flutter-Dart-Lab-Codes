@@ -33,32 +33,52 @@ This repository contains hands-on lab exercises written in Dart and Flutter. The
 | `Dart_Codes_5.txt` | Flutter UI | Rows, Icons, Images, Buttons in a Scaffold |
 | `Dart_Codes_Extra.txt` | Flutter UI | Text styles, nested layouts, Row and Column |
 | `Dart_Lab_Code.txt` | Flutter UI | Full Flutter layout demo with image, icons, and text |
+| `Dart_Extra_Codes_Practice.docx` | Dart + OOP + Flutter | Extended practice notes covering strings, lists, OOP, control flow, functions, mixins, and Flutter UI |
 
 ---
 
 ## Topics Covered
 
 **Dart Programming**
-- String methods: replaceAll, split, substring, contains, toString
-- Collections: List, Set, Map operations
-- Functions: return types, parameters, void functions
+- String methods: replaceAll, split, substring, contains, toString, toLowerCase, toUpperCase, trim, compareTo
+- String concatenation and interpolation
+- Collections: List (fixed-length and growable), Set, Map operations
+- List methods: add, addAll, insert, insertAll, remove, removeAt, removeLast, removeRange
+- Set methods: add, addAll, elementAt, remove, clear
+- Map methods: addAll, clear, remove, forEach
+- Functions: return types, parameters, void functions, anonymous functions, recursive functions
+- Control flow: if, if-else, else-if ladder, switch-case
+- Loops: for, for-in, while, do-while
 
 **Object-Oriented Programming (OOP)**
-- Inheritance using `extends`
+- Classes, objects, and constructors
+- Named constructors and factory constructors
+- Inheritance: single, multilevel, and hierarchical
 - Method overriding with `@override`
+- The `super` keyword
+- Getters and setters
 - Abstract classes
 - Interface implementation using `implements`
 - Polymorphism
+- Mixins for multiple inheritance alternatives
+- Composition (has-a relationship)
+- Extension methods
+- Method overloading alternatives using optional positional, named, and default parameters
+
+**Algorithms**
+- Fibonacci series using recursion
 
 **Flutter UI Development**
 - MaterialApp, Scaffold, AppBar setup
-- Layout widgets: Column, Row, SizedBox
+- Layout widgets: Column, Row, SizedBox, Container
 - Text widget with custom styles (color, fontSize, fontWeight, fontStyle, letterSpacing)
 - Icon and IconButton widgets
 - Buttons: ElevatedButton, TextButton, OutlinedButton, IconButton
 - Image loading from network using Image.network
 - mainAxisAlignment and crossAxisAlignment
 - Nested layouts (Row inside Column, Column inside Row)
+- Container with fixed height and width wrapping images
+- TabBar and TabBarView for tabbed navigation
 
 ---
 
@@ -85,6 +105,30 @@ Three separate Flutter apps demonstrating: (1) various Text styling options, (2)
 ### Dart_Lab_Code.txt - Full Flutter Layout Demo
 A complete Flutter UI page simulating a real app layout. Features a full-width network image, location text with a star rating, three action icons (Call, Route, Share) with labels, descriptive paragraph text, and a submit button.
 
+### Dart_Extra_Codes_Practice.docx - Extended Practice Notes
+A comprehensive practice document covering a wide range of Dart and Flutter topics with code examples and expected outputs. Topics include:
+
+- String concatenation and interpolation with output examples
+- All major string methods with outputs (toLowerCase, toUpperCase, trim, compareTo, replaceAll, split, substring, toString)
+- Fixed-length and growable List creation
+- All four List insert methods (add, addAll, insert, insertAll) with examples
+- All four List remove methods (remove, removeAt, removeLast, removeRange) with examples
+- Set initialization and all major Set methods with examples
+- Map creation using literal syntax and the Map() constructor
+- All major Map methods (addAll, clear, remove, forEach) with examples
+- Control flow: if, if-else, else-if ladder, switch-case
+- Loops: for loop, for-in loop with list, while loop, do-while loop
+- Functions: return types, string-returning functions, void functions with conditionals, anonymous functions using forEach, multiplication function, and recursive factorial
+- OOP: class with fields and methods, parameterized constructors, named constructors, this keyword, single inheritance, multilevel inheritance, hierarchical inheritance, super constructor call, method overriding, super keyword usage, getters and setters
+- Abstract class and implementation
+- Interface implementation using `implements`
+- Factory constructors
+- Method overloading alternatives: optional positional parameters `[ ]`, optional named parameters `{ }`, default parameter values, dynamic parameters
+- Multiple inheritance alternatives: mixin, implements, composition (has-a relationship), extension methods
+- Fibonacci series using recursion
+- Flutter: Row and Column with Container wrapping Image.network
+- Flutter: TabBar and TabBarView for tabbed navigation layout
+
 ---
 
 ## Requirements
@@ -104,10 +148,11 @@ A complete Flutter UI page simulating a real app layout. Features a full-width n
 4. Replace the contents of `lib/main.dart` in your project with the copied code.
 5. Run the app using `flutter run` in the terminal, or press the Run button in your IDE.
 
-> Note: Each `.txt` file may contain multiple separate code examples. Copy one example at a time into `main.dart`.
+> Note: Each file may contain multiple separate code examples. Copy one example at a time into `main.dart`. For the `.docx` file, open it and copy individual code blocks as needed.
 
 ---
 
 ## Author
 
-Kazi Arafat Hossain
+ITM 8th Batch - Lab Session Codes
+Dhaka, Bangladesh
